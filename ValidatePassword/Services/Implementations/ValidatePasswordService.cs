@@ -107,7 +107,7 @@ namespace ValidatePassword.Services.Implementations
         {
             int distinctCount = password.Distinct().Count();
             bool containsDupes = !(distinctCount == password.Length);
-
+            
             return containsDupes;
         }
         #endregion [ Private Methods ]
